@@ -1,0 +1,330 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #000000, #272626);
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+section {
+  padding: 80px 0;
+}
+
+/* About Me Section */
+.about-me-section {
+  background-color: #fff;
+}
+
+.about-me-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about-me-section h2 {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.about-me-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Skills Section */
+.skills-section {
+  background-color: #f8f9fa;
+}
+
+.skill-buttons .btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+.skill-icons img {
+  width: 50px;
+  margin: 10px;
+}
+
+/* Projects Section */
+
+
+
+
+
+.projects-section .card {
+  transition: transform 0.3s ease;
+}
+
+.projects-section .card:hover {
+  transform: translateY(-10px);
+}
+
+/* Certifications Section */
+.certifications-section .card {
+  transition: transform 0.3s ease;
+}
+
+.certifications-section .card:hover {
+  transform: translateY(-10px);
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #fff;
+}
+
+.contact-section .form-control {
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer-section {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-section .social-links .btn-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section .social-links .btn-link:hover {
+  color: #007bff;
+}
+.about-me-section {
+  background: url("img/background.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Ensures full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Ensures text is readable on the background */
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.about-me-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adds an overlay for readability */
+  z-index: 1;
+}
+
+.about-me-content {
+  position: relative;
+  z-index: 2; /* Ensures content is above the overlay */
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-me-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-me-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-me-section h1 {
+    font-size: 2rem;
+  }
+
+  .about-me-section p {
+    font-size: 1rem;
+  }
+}
+.lottie-container {
+  position: relative;
+  width: 100%;
+  max-width: 650px; /* Adjust as needed */
+  height: 600px; /* Adjust height */
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Lottie Animation as Background */
+#lottie-background {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  transform: translate(-50%, -50%); /* Centers the background */
+  z-index: 0; /* Keeps the animation behind the image */
+  /* Optional border */
+  pointer-events: none; /* Ensures the background does not interfere with interactions */
+}
+
+/* Ensure that the image inside the container behaves as expected */
+.foreground-img {
+  max-width: 100%;
+  height: 380px;
+  object-fit: cover; /* Ensures the image covers the container area without distortion */
+  z-index: 1; /* Ensures the image is above the Lottie background */
+}
+.styled-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.styled-list li {
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.styled-list li:nth-child(1) { transition-delay: 0.2s; }
+.styled-list li:nth-child(2) { transition-delay: 0.4s; }
+.styled-list li:nth-child(3) { transition-delay: 0.6s; }
+.styled-list li:nth-child(4) { transition-delay: 0.8s; }
+.styled-list li:nth-child(5) { transition-delay: 1s; }
+.styled-list li:nth-child(6) { transition-delay: 1.2s; }
+.styled-list li:nth-child(7) { transition-delay: 1.4s; }
+
+.btn {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.bars {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bars img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.progress-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.progress-label {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Custom Green Light Progress Bar */
+.progress {
+  height: 15px;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #00ff00, #33ff33, #00ff00);
+  animation: glow-animation 1.5s infinite linear;
+}
+
+/* Green Light Flow Effect */
+@keyframes glow-animation {
+  0% { box-shadow: 0 0 5px #00ff00; }
+  50% { box-shadow: 0 0 20px #00ff00; }
+  100% { box-shadow: 0 0 5px #00ff00; }
+}
+.skills-section{
+  background: url("img/background.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Ensures full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Ensures text is readable on the background */
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.project-tabs-custom {
+  list-style: none;
+  padding: 0;
+}
+
+.project-tab-item {
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background: #28a745;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.project-tab-active {
+  background: #218838;
+}
+
+.project-card {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+  
+}
+
+.project-card.web {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+.card-body{
+  background-color: #000000;
+  color:whitesmoke;
+}
+
+.svg-container {
+ /* Vertically center the container */
+  background-color: transparent; /* Make background transparent */
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Space between the icons */
+  padding: 10px;
+  
+}
+a{
+  text-decoration: none;
+}
