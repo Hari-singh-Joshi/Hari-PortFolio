@@ -191,17 +191,17 @@ section {
     height: 110%;
   }
   .foreground-img {
-    height: 250px;
+    height: 270px;
   }
 }
 
 @media (max-width: 768px) { /* Mobile Devices */
   #lottie-background {
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
   }
   .foreground-img {
-    height: 250px;
+    height: 270px;
   }
 }
 
