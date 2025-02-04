@@ -211,11 +211,11 @@ section {
 
 @media (max-width: 480px) { /* Small Mobile Devices */
   #lottie-background {
-    width: 90%;
-    height: 90%;
+    width: 160%;
+    height: 160%;
   }
   .foreground-img {
-    height: 200px;
+    height: 190px;
   }
 }
 
