@@ -689,7 +689,7 @@
                                     <strong class="ms-3"><a href="tel:+917453966532" class="text-light text-decoration-none">+91-7453966532</a></strong>
                                 </li>
                             </ul>
-                            
+                            <img src="img/third.webp" height="220px" width="400px">
                         </div>
                     </div>
         
@@ -722,29 +722,66 @@
         
 
         <!-- Footer -->
-        <footer class="footer-section">
-            <div class="container d-flex justify-content-center">
-                <div class="social-links">
-                    <a
-                        href="https://www.linkedin.com/in/hari-singh-joshi-4499b326b/"
-                        target="_blank" class="btn btn-link">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://github.com/Hari-singh-Joshi"
-                        target="_blank" class="btn btn-link">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="mailto:joshiharish942@gmail.com" target="_blank"
-                        class="btn btn-link">
-                        <i class="fas fa-envelope"></i> Email
-                    </a>
-                    <a href="tel:7453966532" target="_blank"
-                        class="btn btn-link">
-                        <i class="fas fa-phone"></i> Call
-                    </a>
+        <footer class="footer-section bg-secondary">
+            <div class="container d-flex  justify-content-center">
+                <div class="row">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/hari-singh-joshi-4499b326b/"
+                            target="_blank" class="btn btn-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/Hari-singh-Joshi"
+                            target="_blank" class="btn btn-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="mailto:joshiharish942@gmail.com" target="_blank"
+                            class="btn btn-link">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="tel:7453966532" target="_blank"
+                            class="btn btn-link">
+                            <i class="fas fa-phone"></i> Call
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
+        
+        <style>
+            .footer-section {
+                background-color: #f8f9fa;
+                padding: 10px 0;
+            }
+        
+            .social-links {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap; /* Allows wrapping on small screens */
+                justify-content: center;
+            }
+        
+            .social-links a {
+                text-decoration: none;
+                padding: 5px 10px;
+                font-size: 14px;
+                white-space: nowrap;
+            }
+        
+            /* Responsive styling for smaller screens */
+            @media (max-width: 576px) {
+                .social-links {
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 5px; /* Reduce space between links */
+                }
+        
+                .social-links a {
+                    font-size: 12px;
+                    padding: 3px 6px; /* Reduce padding */
+                }
+            }
+        </style>
+        
 
         <!-- Bootstrap JS -->
         <script
