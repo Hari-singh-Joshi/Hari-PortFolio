@@ -168,40 +168,44 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 120%;
-  height: 120%;
+  width: 170%;
+  height: 170%;
   transform: translate(-50%, -50%);
-  z-index: 0;
+  z-index: 0; /* Keeps animation in the background */
   pointer-events: none;
 }
 
+/* Foreground Image */
 .foreground-img {
-  max-width: 100%;
-  height: 400px;
+  position: relative;  /* Ensures it appears above Lottie */
+  max-width: 90%;
+  height: 380px;
   object-fit: cover;
-  z-index: 1;
+  z-index: 2;  /* Higher than #lottie-background */
   display: block;
   margin: 0 auto;
+  border-radius: 10px; /* Matches container for a smoother look */
 }
+
 
 /* Responsive Design */
 @media (max-width: 1024px) { /* Tablets */
   #lottie-background {
-    width: 110%;
-    height: 110%;
+    width: 150%;
+    height: 150%;
   }
   .foreground-img {
-    height: 270px;
+    height: 210px;
   }
 }
 
 @media (max-width: 768px) { /* Mobile Devices */
   #lottie-background {
-    width: 110%;
-    height: 110%;
+    width: 170%;
+    height: 170%;
   }
   .foreground-img {
-    height: 270px;
+    height: 210px;
   }
 }
 
